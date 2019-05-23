@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<html lang="fr-FR">
+<head>
+<title>Documentation Ultimate PS3 Hack Script</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+<h1>Documentation Ultimate PS3 Hack Script</h1>
+&nbsp;
+<h2>Introduction</h2>
+&nbsp;
+<p>
+Ceci est un ensemble de script permettant de réaliser différentes tâches pour permettre de profiter simplement des différentes possibilités qu'ofre le hack PS3.
+<br/><br/>
+Cette documentation a pour but d'orienter l'utilisateur pour faire fonctionner au mieux ces outils. Le sujet concernant cette application se trouve sur <a target="_new" href="http://www.logic-sunrise.com/forums/topic/79836-shadow256-ultimate-ps3-hack-script/">cette page</a>.
+<br/><br/>
+Ce script est utilisable sur Windows 7 32 et 64 bits ainsi que sur les versions supérieurs (Windows Vista non testé).
+<br/><br/>
+Veuillez bien prendre le temps de lire les instructions durant le script car certaines actions nécessitent d'être prudent pour ne pas endommager le matériel.
+<br/><br/>
+Notez que je ne pourrai être tenu responsable en cas de domages résultant de l'utilisation de ce logiciel et de tout se qu'il contient.
+</p>
+&nbsp;
+<h2>Fonctionnalités</h2>
+&nbsp;
+<ul>
+<li>Mise en place du hack pour les consoles compatibles sous le firmware 4.82 et sous le firmware spécial 4.84. Pour en savoir plus, consultez <a target="_new" href="http://www.logic-sunrise.com/forums/topic/79674-tuto-jailbreak-et-installation-dun-cfw-via-ps3xploit/">ce tutoriel</a>.</li>
+<li>Mise en place du hen pour toutes les consoles sous le firmware 4.82 et sous le firmware spécial 4.84.</li>
+</ul>
+&nbsp;
+<h2>Bugs connus</h2>
+&nbsp;
+<ul>
+<li>L'utilisation de guillemets dans les entrées utilisateurs fait planter le script.</li>
+<li>Lorsqu'une sortie console faite par un "echo" est effectuée, cela produit une erreur dans le fichier log. L'encodage en UTF-8 semble être à l'origine de ce problème mais je n'ai pas trouvé comment le résoudre pour l'instant.</li>
+</ul>
+&nbsp;
+<h2>Liens utiles</h2>
+&nbsp;
+<p>
+Cette documentation ne couvrira pas les différents tutoriels d'utilisations des logiciels, de l'installation de pkg  ou encore la mise en place des différents hacks mais voici quelques liens utiles:
+<br/>
+<a target="_new" href="http://www.logic-sunrise.com/forums/topic/79674-tuto-jailbreak-et-installation-dun-cfw-via-ps3xploit/">Tutoriel de mise en place de PS3Xploit v1.0</a>.
+<br/>
+<a target="_new" href="http://www.logic-sunrise.com/news-971212-ps3-ps3xploit-v20-officialise.html">News sur PS3Xploit v2.0</a>. Cette page contient également un lien pour télécharger PyPS3checker. Pour utiliser ce dernier, vous aurez besoin de télécharger et d'installer la dernière version de Python 2.7 (n'utilisez pas Python 3).
+<br/>
+<a target="_new" href="http://www.logic-sunrise.com/forums/forum/296-customs-firmwares-installation-et-utilisation/">Installation et utilisation des custom firmwares</a>
+</p>
+&nbsp;
+<h2>Changelog</h2>
+&nbsp;
+<h3>V1.10</h3>
+<ul>
+<li>Grosse refonte du script en général, les dossiers ont été réorganisés, certains bugs corrigés, le projet adapté pour être mis sur Github, etc...</li>
+<li>Ajout de la possibilité d'utiliser les différents outils pour le firmware spécial 4.84 intégrant la faille webkit du 4.82, ce firmware particulier peut être préparé sur un support USB durant les différents scripts pour être ensuite rapidement installé sur une console disposant d'un firmware inférieur ou égal au firmware officiel 4.84.</li>
+<li>Ajout du hen PS3 pour toutes consoles sou firmware inférieur ou égal au firmware officiel 4.84, est particulièrement utile pour les consoles ne pouvant pas installer de CFW. Attention, tout comme l'exploit permettant d'installer un CFW pour les consoles compatibles pour les firmwares 4.82 ou 4.84 spécial, il faut d'abord se trouver sous un de ces firmwares pour utiliser le hen.</li>
+</ul>
+<h3>V1.09</h3>
+<ul>
+<li>Remplacement de Miniweb Server par Caddy Web Server pour corriger certains problèmes.</li>
+<li>Changement du binaire de Wget vers la version 19.04.</li>
+</ul>
+<h3>V1.08</h3>
+<ul>
+<li>Le script utilise maintenant PS3Xploit 2.0.</li>
+<li>Ajout des fonctions de dump de la NAND/NOR et de l'IDPS.</li>
+<li>Ajout et modification de certains messages.</li>
+<li>Remaniement du script de flash pour intégrer au mieux les nouvelles possibilité offertent par la version 2.0 de PS3Xploit.</li>
+<li>Le script de restauration d'un support USB est adapté aux fichiers de la version 2.0 de PS3Xploit.</li>
+<li>Mise à jour de la documentation pour ajouter des informations sur PyPS3checker.</li>
+</ul>
+<h3>V1.07</h3>
+<ul>
+<li>Ajout de la liste des modèles nor compatibles lors du choix de l'exploit à lancer. Attention, je rappel que les modèles CECH-25xxx ne sont pas toutes compatibles avec le hack donc bien lire les notes en début de script.</li>
+</ul>
+<h3>V1.06</h3>
+<ul>
+<li>Création d'un script "preload.bat" qui indique à l'utilisateur comment changer la police de caractères pour en choisir une qui soit compatible avec l'UTF-8. Si celle-ci ne l'est pas, le script s'arrête juste après cette vérification.</li>
+<li>Modification du raccourci de lancement du script pour qu'il pointe sur le nouveau script "preload.bat".</li>
+<li>Déplacement de quelques instructions du script "LogHook.bat" vers le script "preload.bat" pour que le tout soit cohérent.</li>
+</ul>
+<h3>V1.05</h3>
+<ul>
+<li>Optimisation d'une partie du code.</li>
+</ul>
+<h3>V1.04</h3>
+<ul>
+<li>Ajout de la possibilité de passer toutes la phase de préparation du support USB pour lancer le serveur web hébergeant l'exploit souhaité rapidement. S'il vous plaît, si vous n'êtes pas sure de la compatibilité de la console ou si vous n'êtes pas sure de se que vous faites, veuillez suivre la phase de préparation du support USB pour éviter de bricker votre console.</li>
+</ul>
+<h3>V1.03</h3>
+<ul>
+<li>Ajout de la possibilité de préparer la clé USB pour installer l'OFW 4.82.</li>
+<li>Ajout de la possibilité de sélectionner un fichier de CFW 4.82 personnel. Attention, aucune vérification n'est vraiment faite donc soyez prudent avec cette fonctionnalité.</li>
+<li>Ajout d'un script permettant de supprimer les fichiers copiés par le script de préparation du hack 4.82 d'une clé USB.</li>
+<li>Ajout d'un script permettant de réinitialiser le script comme s'il venait d'être téléchargé. Notez que si vous avez créé des fichiers ou dossiers non géré pendant le script, ils ne seront pas supprimés.</li>
+<li>Quelques autres modifications mineurs.</li>
+</ul>
+<h3>V1.02</h3>
+<ul>
+<li>Ajout de la traduction française de PS3Xploit, merci @Red-J.</li>
+</ul>
+<h3>V1.01</h3>
+<ul>
+<li>Ajout de Megatools pour télécharger les CFWs s'ils ne sont pas présent.</li>
+</ul>
+<h3>V1.00</h3>
+<ul>
+<li>Version initiale.</li>
+</ul>
+&nbsp;
+<h2>Credit</h2>
+&nbsp;
+<ul>
+<li>7zip 16.04: http://www.7-zip.org/</li>
+<li>caddy 0.10.10 personal: https://caddyserver.com</li>
+<li>fat32format 1.08 (compiled and modified by myself): http://www.ridgecrop.demon.co.uk/index.htm?fat32format.htm</li>
+<li>GNU Win32 tools (Md5sum, Cut, Grep, Head, Tail): http://gnuwin32.sourceforge.net/</li>
+<li>megatools 1.9.98: https://megatools.megous.com/</li>
+<li>PS3Xploit: W, esc0rtd3w, habib, bguerville and probably some others people, see also <a target="_blank" href="http://www.ps3xploit.com/">this page</a> to access the official website of the PS3Xploit team. Thanks to Red-J of Logic-sunrise for the french translation on 4.82 PS3Xploit.</li>
+<li>HFW 4.84: https://www.psx-place.com/threads/update-ps3-hfw-hybrid-firmware-4-84-2-ps3xploit-han-flash-tools-restored-for-4-84-ofw-users.23094/</li>
+<li>CFW PS3 FERROX: Alexander</li>
+<li>QA Togle 4.21+: habib</li>
+<li>Wget 19.4: https://eternallybored.org/misc/wget/</li>
+<li>And everybody else I might have forgotten.</li>
+</ul>
+</body>
+</html>
