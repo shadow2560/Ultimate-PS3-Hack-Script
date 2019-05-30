@@ -1,13 +1,14 @@
 ::Script by Shadow256
 chcp 65001 > nul
 IF EXIST log.txt del /q log.txt
+:define_action_choice
+set action_choice=
 cls
 ::Header
 title Shadow256 Ultimate PS3 Hack Script %uphs_version%
 echo :::::::::::::::::::::::::::::::::::::
 echo ::Shadow256 Ultimate PS3 Hack Script %uphs_version%::
 echo :::::::::::::::::::::::::::::::::::::
-:define_action_choice
 echo.
 echo Que souhaitez-vous faire?
 echo.
@@ -40,42 +41,49 @@ goto:end_script
 :prepare_hack_script
 set action_choice=
 echo.
+cls
 call TOOLS\Storage\flash.bat > log.txt 2>&1
 @echo off
 goto:define_action_choice
 :dump_memory_script
 set action_choice=
 echo.
+cls
 call TOOLS\Storage\dump_memory.bat > log.txt 2>&1
 @echo off
 goto:define_action_choice
 :dump_idps_script
 set action_choice=
 echo.
+cls
 call TOOLS\Storage\dump_idps.bat > log.txt 2>&1
 @echo off
 goto:define_action_choice
 :hen_script
 set action_choice=
 echo.
+cls
 call TOOLS\Storage\hen.bat > log.txt 2>&1
 @echo off
 goto:define_action_choice
 :restore_USB__script
 set action_choice=
 echo.
+cls
 call TOOLS\Storage\restore_USB.bat
 @echo off
 goto:define_action_choice
 :restore_default__script
 set action_choice=
 echo.
+cls
 call TOOLS\Storage\restore_default_all.bat
 @echo off
 goto:define_action_choice
 :launch_doc
 set action_choice=
 echo.
+cls
 start DOC\index.html
 goto:define_action_choice
 :end_script
